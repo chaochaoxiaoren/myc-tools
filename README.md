@@ -38,7 +38,17 @@ npm i husky -D
 
 9. 安装lint-stage
 npm i -D lint-staged
+配置package.json
 用于检测暂存区的文件，可以和husky和eslint搭配，在提交之前检测指定文件的格式
+
+10. 安装commitlint
+npm i -D @commitlint/cli @commitlint/config-conventional @commitlint/prompt-cli
+配置 .commitlintrc.js（参考现在文件）
+
+给husky添加commit-msg钩子：.husky下新增commit-msg，内容参考现在配置，当前配置意味着会对提交的信息做校验，规则是@commitlint/config-conventional，git commit 时会验证。
+
+11. commit配置
+因为git commit 提示出错时，只会简单提示，不清楚具体该怎么写时，使用另外一个方式：package.json 添加commit命令
 
 
 
