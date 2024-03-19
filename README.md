@@ -36,6 +36,10 @@ npm i husky -D
 .husky 下的文件pre-commit 是git提交之前的钩子，里面可以放执行的脚本(参考现在文件)   
 现在的配置意思是：代码没有通过eslint检查不允许提交代码
 
+9. 安装lint-stage
+npm i -D lint-staged
+用于检测暂存区的文件，可以和husky和eslint搭配，在提交之前检测指定文件的格式
+
 
 
 ## 参考
