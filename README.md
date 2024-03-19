@@ -20,10 +20,17 @@ npx jest --init
 npm i babel-jest @babel/core @babel/preset-env @babel/preset-typescript -D
 配置babel.config.js(参考现在文件)
 
+5. 安装eslint
+npm init @eslint/config
 
+6. 安装prettier
+npm i -D prettier
 
+7. 配置Editorconfig，参考现在文件
+
+8. 
 
 ## 参考
-https://juejin.cn/post/7308925069916258356?from=search-suggest#heading-12
+https://juejin.cn/post/7308925069916258356?from=search-suggest#heading-12  
 
-
+https://juejin.cn/post/7309689123563782178  
