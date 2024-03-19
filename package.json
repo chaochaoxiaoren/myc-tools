@@ -2,7 +2,10 @@
   "name": "my-tools-02",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "jsnext:main": "lib/index.esm.js",
+  "browser": "lib/index.umd.js",
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
@@ -11,6 +14,8 @@
     "prepare": "husky",
     "commit": "commit"
   },
+  "files": ["lib"],
+  "types": "lib/index.d.ts",
   "keywords": [],
   "author": "",
   "license": "ISC",
