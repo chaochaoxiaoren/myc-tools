@@ -1,1 +1,1 @@
-export { sum } from './ont';
+export { sum } from "./ont";
