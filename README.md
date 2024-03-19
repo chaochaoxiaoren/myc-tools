@@ -28,7 +28,15 @@ npm i -D prettier
 
 7. 配置Editorconfig，参考现在文件
 
-8. 
+8. 安装husky
+npm i husky -D
+添加命令并执行husky init
+
+配置    
+.husky 下的文件pre-commit 是git提交之前的钩子，里面可以放执行的脚本(参考现在文件)   
+现在的配置意思是：代码没有通过eslint检查不允许提交代码
+
+
 
 ## 参考
 https://juejin.cn/post/7308925069916258356?from=search-suggest#heading-12  
